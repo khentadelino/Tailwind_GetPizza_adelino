@@ -737,11 +737,8 @@
   }
   .foodItemWrap {
     display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: calc(var(--spacing) * 10);
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
   }
   .foodItem {
     display: none;
@@ -757,7 +754,8 @@
   }
   .cards {
     display: flex;
-    width: calc(var(--spacing) * 100);
+    height: calc(var(--spacing) * 120);
+    width: calc(var(--spacing) * 70);
     flex-direction: column;
     align-items: center;
     gap: calc(var(--spacing) * 3);
@@ -765,7 +763,7 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
     border-color: var(--color-white);
-    padding: calc(var(--spacing) * 8);
+    padding: calc(var(--spacing) * 10);
     color: var(--color-white);
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 150);
