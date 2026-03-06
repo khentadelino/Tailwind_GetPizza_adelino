@@ -13,6 +13,7 @@
     --spacing: 0.25rem;
     --container-md: 28rem;
     --container-2xl: 42rem;
+    --container-4xl: 56rem;
     --container-7xl: 80rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
@@ -289,6 +290,9 @@
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
+  .h-250 {
+    height: calc(var(--spacing) * 250);
+  }
   .h-350 {
     height: calc(var(--spacing) * 350);
   }
@@ -307,11 +311,17 @@
   .w-90 {
     width: calc(var(--spacing) * 90);
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
   }
   .max-w-9\/12 {
     max-width: calc(9 / 12 * 100%);
@@ -386,6 +396,13 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-8 {
     border-style: var(--tw-border-style);
     border-width: 8px;
@@ -414,6 +431,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -440,6 +460,9 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .py-14 {
+    padding-block: calc(var(--spacing) * 14);
   }
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
@@ -599,14 +622,19 @@
       display: block;
     }
   }
-  .lg\:h-\[400px\] {
+  .lg\:h-150 {
     @media (width >= 64rem) {
-      height: 400px;
+      height: calc(var(--spacing) * 150);
     }
   }
-  .lg\:w-\[100rem\] {
+  .lg\:h-full {
     @media (width >= 64rem) {
-      width: 100rem;
+      height: 100%;
+    }
+  }
+  .lg\:w-full {
+    @media (width >= 64rem) {
+      width: 100%;
     }
   }
   .lg\:grid-cols-\[1\.5fr_2fr\] {
@@ -627,6 +655,11 @@
   .lg\:py-20 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pt-0 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 0);
     }
   }
   .lg\:text-center {
@@ -680,6 +713,14 @@
     width: 100%;
     max-width: var(--container-7xl);
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .headerContainer {
+    margin-inline: auto;
+    width: 100%;
+    padding-inline: calc(var(--spacing) * 4);
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 50);
+    }
   }
   h1 {
     font-size: clamp(3rem, 6vw, 4rem);

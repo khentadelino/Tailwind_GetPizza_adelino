@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Pizza</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../IMG/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+  </head>
+  <body>
+    <header class="py-4 fixed shadow-md w-full z-50">
+      <div class="headerContainer">
+        <!-- Wrapper -->
+        <div id="wrapper" class="flex justify-between items-center">
+          <!-- Logo -->
+          <div>
+            <img
+              class="w-48 h-24 md:w-64 md:h-32"
+              src="../IMG/LOGO.png"
+              alt="Logo"
+            />
+          </div>
+          <!-- Nav -->
+          <nav class="headerNav">
+            <ul>
+              <li><a href="./home.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./menu.html">MENU</a></li>
+              <li><a href="./contacts.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <!-- Toggle Menu -->
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+          </div>
+          <!-- Transparent -->
+          <div class="transparent"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="flex justify-center pt-40 md:pt-50 px-6 pb-3">
+      <h5 class="text-primary text-center">
+        <span class="inline-flex items-start gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 mt-1"
+            viewBox="0 0 512 512"
+            fill="currentColor"
+          >
+            <path
+              fill="#b23920"
+              d="M461.2 18.9C472.7 24 480 35.4 480 48l0 416c0 12.6-7.3 24-18.8 29.1s-24.8 3.2-34.3-5.1l-46.6-40.7c-43.6-38.1-98.7-60.3-156.4-63l0 95.7c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-96C57.3 384 0 326.7 0 256S57.3 128 128 128l84.5 0c61.8-.2 121.4-22.7 167.9-63.3l46.6-40.7c9.4-8.3 22.9-10.2 34.3-5.1zM224 320l0 .2c70.3 2.7 137.8 28.5 192 73.4l0-275.3c-54.2 44.9-121.7 70.7-192 73.4L224 320z"
+            />
+          </svg>
+          <span></span>
+        </span>
+        This website provides information about our store. Online transactions
+        are coming soon.
+      </h5>
+    </section>
+
+    <!-- Maps -->
+    <section class="py-12 lg:py-20 lg:pt-0">
+      <div class="container">
+        <div class="flex justify-center px-4 w-full h-250 lg:h-150">
+          <iframe
+            class="w-full h-full rounded-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24302.36062691335!2d55.126371707868365!3d25.116497119066516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f1529c2653b15%3A0x3dcabcae764a3e16!2sPalm%20Jumeirah!5e0!3m2!1sen!2sph!4v1772753598601!5m2!1sen!2sph"
+            style="border: 0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-12 lg:py-20 bg-secondary">
+      <div class="container">
+        <div class="flex flex-col gap-5 justify-center text-center">
+          <h1>GET IN TOUCH</h1>
+
+          <form
+            action="#"
+            class="flex flex-col gap-5 max-w-4xl mx-auto w-full items-center"
+          >
+            <div class="flex flex-row gap-5 w-full">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="w-full bg-white p-3 rounded-xl"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="w-full bg-white p-3 rounded-xl"
+              />
+            </div>
+
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full bg-white p-3 rounded-xl"
+            />
+
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full bg-white p-3 rounded-xl"
+            />
+
+            <textarea
+              placeholder="Your Message"
+              rows="5"
+              class="w-full bg-white p-3 rounded-xl"
+            ></textarea>
+
+            <button class="btn btn--primary w-fit">SUBMIT FORM</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <!-- wrapper -->
+      <div class="footerWrapper">
+        <img src="../IMG/LOGO.png" alt="logo" />
+        <ul>
+          <li>
+            <h4>ADDRESS</h4>
+            <p>570 8th Ave, New York, NY</p>
+            <p>10018 United States</p>
+          </li>
+          <li>
+            <h4>BOOK A TABLE</h4>
+            <p>Dogfood Och Sliders Foodtruck.</p>
+            <p>Under Om Oss Kan Ni Lasa</p>
+          </li>
+          <li>
+            <h4>OPENING HOURS</h4>
+            <p>Monday - Friday</p>
+            <p>10:00 AM - 11:00PM</p>
+          </li>
+        </ul>
+        <p class="text-primary">0123456789</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="../js/reviewSlider.js"></script>
+    <script src="../js/yearsAccord.js"></script>
+    <script src="../js/menuTabs.js"></script>
+    <script src="../js/foodTabs.js"></script>
+    <script src="../js/toggleMenu.js"></script>
+  </body>
+</html>

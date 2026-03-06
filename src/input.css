@@ -44,6 +44,10 @@
     @apply max-w-7xl w-full mx-auto px-4;
   }
 
+  .headerContainer {
+    @apply w-full mx-auto px-4 lg:px-50;
+  }
+
   h1 {
     @apply text-[clamp(3rem,6vw,4rem)] font-bold;
   }
